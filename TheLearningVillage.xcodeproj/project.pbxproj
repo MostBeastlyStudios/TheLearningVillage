@@ -30,6 +30,25 @@
 		8856C83719E9F75B00CBE5A4 /* TLV001_SCR_014.png in Resources */ = {isa = PBXBuildFile; fileRef = 8856C82719E9F75B00CBE5A4 /* TLV001_SCR_014.png */; };
 		8856C83819E9F75B00CBE5A4 /* TLV001_SCR_015.png in Resources */ = {isa = PBXBuildFile; fileRef = 8856C82819E9F75B00CBE5A4 /* TLV001_SCR_015.png */; };
 		8856C83919E9F75B00CBE5A4 /* TLV001_SCR_016.png in Resources */ = {isa = PBXBuildFile; fileRef = 8856C82919E9F75B00CBE5A4 /* TLV001_SCR_016.png */; };
+		8856C86E19EA1AF400CBE5A4 /* DAVBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C84519EA1AF400CBE5A4 /* DAVBaseRequest.m */; };
+		8856C86F19EA1AF400CBE5A4 /* DAVCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C84719EA1AF400CBE5A4 /* DAVCredentials.m */; };
+		8856C87019EA1AF400CBE5A4 /* DAVListingParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C84A19EA1AF400CBE5A4 /* DAVListingParser.m */; };
+		8856C87119EA1AF400CBE5A4 /* DAVRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C84D19EA1AF400CBE5A4 /* DAVRequest.m */; };
+		8856C87219EA1AF400CBE5A4 /* DAVRequestGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C84F19EA1AF400CBE5A4 /* DAVRequestGroup.m */; };
+		8856C87319EA1AF400CBE5A4 /* DAVRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C85119EA1AF400CBE5A4 /* DAVRequests.m */; };
+		8856C87419EA1AF400CBE5A4 /* DAVResponseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C85319EA1AF400CBE5A4 /* DAVResponseItem.m */; };
+		8856C87519EA1AF400CBE5A4 /* DAVSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C85519EA1AF400CBE5A4 /* DAVSession.m */; };
+		8856C87619EA1AF400CBE5A4 /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C85819EA1AF400CBE5A4 /* ISO8601DateFormatter.m */; };
+		8856C87719EA1AF400CBE5A4 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8856C85919EA1AF400CBE5A4 /* LICENSE.txt */; };
+		8856C87819EA1AF400CBE5A4 /* NSDateRFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C85C19EA1AF400CBE5A4 /* NSDateRFC1123.m */; };
+		8856C87919EA1AF400CBE5A4 /* AMkColTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C85F19EA1AF400CBE5A4 /* AMkColTest.m */; };
+		8856C87A19EA1AF400CBE5A4 /* BPutTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C86119EA1AF400CBE5A4 /* BPutTest.m */; };
+		8856C87B19EA1AF400CBE5A4 /* CGetTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C86319EA1AF400CBE5A4 /* CGetTest.m */; };
+		8856C87C19EA1AF400CBE5A4 /* DAVTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C86519EA1AF400CBE5A4 /* DAVTest.m */; };
+		8856C87D19EA1AF400CBE5A4 /* DCopyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C86719EA1AF400CBE5A4 /* DCopyTest.m */; };
+		8856C87E19EA1AF400CBE5A4 /* EMoveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C86919EA1AF400CBE5A4 /* EMoveTest.m */; };
+		8856C87F19EA1AF400CBE5A4 /* FListTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C86B19EA1AF400CBE5A4 /* FListTest.m */; };
+		8856C88019EA1AF400CBE5A4 /* GDeleteTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8856C86D19EA1AF400CBE5A4 /* GDeleteTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +91,45 @@
 		8856C82719E9F75B00CBE5A4 /* TLV001_SCR_014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TLV001_SCR_014.png; sourceTree = "<group>"; };
 		8856C82819E9F75B00CBE5A4 /* TLV001_SCR_015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TLV001_SCR_015.png; sourceTree = "<group>"; };
 		8856C82919E9F75B00CBE5A4 /* TLV001_SCR_016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TLV001_SCR_016.png; sourceTree = "<group>"; };
+		8856C84419EA1AF400CBE5A4 /* DAVBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVBaseRequest.h; sourceTree = "<group>"; };
+		8856C84519EA1AF400CBE5A4 /* DAVBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAVBaseRequest.m; sourceTree = "<group>"; };
+		8856C84619EA1AF400CBE5A4 /* DAVCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVCredentials.h; sourceTree = "<group>"; };
+		8856C84719EA1AF400CBE5A4 /* DAVCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAVCredentials.m; sourceTree = "<group>"; };
+		8856C84819EA1AF400CBE5A4 /* DAVKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVKit.h; sourceTree = "<group>"; };
+		8856C84919EA1AF400CBE5A4 /* DAVListingParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVListingParser.h; sourceTree = "<group>"; };
+		8856C84A19EA1AF400CBE5A4 /* DAVListingParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAVListingParser.m; sourceTree = "<group>"; };
+		8856C84B19EA1AF400CBE5A4 /* DAVRequest+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DAVRequest+Private.h"; sourceTree = "<group>"; };
+		8856C84C19EA1AF400CBE5A4 /* DAVRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVRequest.h; sourceTree = "<group>"; };
+		8856C84D19EA1AF400CBE5A4 /* DAVRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAVRequest.m; sourceTree = "<group>"; };
+		8856C84E19EA1AF400CBE5A4 /* DAVRequestGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVRequestGroup.h; sourceTree = "<group>"; };
+		8856C84F19EA1AF400CBE5A4 /* DAVRequestGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAVRequestGroup.m; sourceTree = "<group>"; };
+		8856C85019EA1AF400CBE5A4 /* DAVRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVRequests.h; sourceTree = "<group>"; };
+		8856C85119EA1AF400CBE5A4 /* DAVRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAVRequests.m; sourceTree = "<group>"; };
+		8856C85219EA1AF400CBE5A4 /* DAVResponseItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVResponseItem.h; sourceTree = "<group>"; };
+		8856C85319EA1AF400CBE5A4 /* DAVResponseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAVResponseItem.m; sourceTree = "<group>"; };
+		8856C85419EA1AF400CBE5A4 /* DAVSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVSession.h; sourceTree = "<group>"; };
+		8856C85519EA1AF400CBE5A4 /* DAVSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAVSession.m; sourceTree = "<group>"; };
+		8856C85719EA1AF400CBE5A4 /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		8856C85819EA1AF400CBE5A4 /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
+		8856C85919EA1AF400CBE5A4 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		8856C85B19EA1AF400CBE5A4 /* NSDateRFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateRFC1123.h; sourceTree = "<group>"; };
+		8856C85C19EA1AF400CBE5A4 /* NSDateRFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateRFC1123.m; sourceTree = "<group>"; };
+		8856C85E19EA1AF400CBE5A4 /* AMkColTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMkColTest.h; sourceTree = "<group>"; };
+		8856C85F19EA1AF400CBE5A4 /* AMkColTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMkColTest.m; sourceTree = "<group>"; };
+		8856C86019EA1AF400CBE5A4 /* BPutTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPutTest.h; sourceTree = "<group>"; };
+		8856C86119EA1AF400CBE5A4 /* BPutTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPutTest.m; sourceTree = "<group>"; };
+		8856C86219EA1AF400CBE5A4 /* CGetTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGetTest.h; sourceTree = "<group>"; };
+		8856C86319EA1AF400CBE5A4 /* CGetTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGetTest.m; sourceTree = "<group>"; };
+		8856C86419EA1AF400CBE5A4 /* DAVTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAVTest.h; sourceTree = "<group>"; };
+		8856C86519EA1AF400CBE5A4 /* DAVTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAVTest.m; sourceTree = "<group>"; };
+		8856C86619EA1AF400CBE5A4 /* DCopyTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCopyTest.h; sourceTree = "<group>"; };
+		8856C86719EA1AF400CBE5A4 /* DCopyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCopyTest.m; sourceTree = "<group>"; };
+		8856C86819EA1AF400CBE5A4 /* EMoveTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMoveTest.h; sourceTree = "<group>"; };
+		8856C86919EA1AF400CBE5A4 /* EMoveTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMoveTest.m; sourceTree = "<group>"; };
+		8856C86A19EA1AF400CBE5A4 /* FListTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FListTest.h; sourceTree = "<group>"; };
+		8856C86B19EA1AF400CBE5A4 /* FListTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FListTest.m; sourceTree = "<group>"; };
+		8856C86C19EA1AF400CBE5A4 /* GDeleteTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDeleteTest.h; sourceTree = "<group>"; };
+		8856C86D19EA1AF400CBE5A4 /* GDeleteTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDeleteTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +171,7 @@
 		88361FB819E48E440084093F /* TheLearningVillage */ = {
 			isa = PBXGroup;
 			children = (
+				8856C84219EA1AF400CBE5A4 /* Sources */,
 				88361FBD19E48E440084093F /* AppDelegate.h */,
 				88361FBE19E48E440084093F /* AppDelegate.m */,
 				88361FC019E48E440084093F /* LogInViewController.h */,
@@ -174,6 +233,84 @@
 			);
 			name = Images;
 			path = TLV_App_Overview;
+			sourceTree = "<group>";
+		};
+		8856C84219EA1AF400CBE5A4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8856C84319EA1AF400CBE5A4 /* Core */,
+				8856C85619EA1AF400CBE5A4 /* ISO8601 */,
+				8856C85A19EA1AF400CBE5A4 /* RFC1123 */,
+				8856C85D19EA1AF400CBE5A4 /* Tests */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8856C84319EA1AF400CBE5A4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8856C84419EA1AF400CBE5A4 /* DAVBaseRequest.h */,
+				8856C84519EA1AF400CBE5A4 /* DAVBaseRequest.m */,
+				8856C84619EA1AF400CBE5A4 /* DAVCredentials.h */,
+				8856C84719EA1AF400CBE5A4 /* DAVCredentials.m */,
+				8856C84819EA1AF400CBE5A4 /* DAVKit.h */,
+				8856C84919EA1AF400CBE5A4 /* DAVListingParser.h */,
+				8856C84A19EA1AF400CBE5A4 /* DAVListingParser.m */,
+				8856C84B19EA1AF400CBE5A4 /* DAVRequest+Private.h */,
+				8856C84C19EA1AF400CBE5A4 /* DAVRequest.h */,
+				8856C84D19EA1AF400CBE5A4 /* DAVRequest.m */,
+				8856C84E19EA1AF400CBE5A4 /* DAVRequestGroup.h */,
+				8856C84F19EA1AF400CBE5A4 /* DAVRequestGroup.m */,
+				8856C85019EA1AF400CBE5A4 /* DAVRequests.h */,
+				8856C85119EA1AF400CBE5A4 /* DAVRequests.m */,
+				8856C85219EA1AF400CBE5A4 /* DAVResponseItem.h */,
+				8856C85319EA1AF400CBE5A4 /* DAVResponseItem.m */,
+				8856C85419EA1AF400CBE5A4 /* DAVSession.h */,
+				8856C85519EA1AF400CBE5A4 /* DAVSession.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8856C85619EA1AF400CBE5A4 /* ISO8601 */ = {
+			isa = PBXGroup;
+			children = (
+				8856C85719EA1AF400CBE5A4 /* ISO8601DateFormatter.h */,
+				8856C85819EA1AF400CBE5A4 /* ISO8601DateFormatter.m */,
+				8856C85919EA1AF400CBE5A4 /* LICENSE.txt */,
+			);
+			path = ISO8601;
+			sourceTree = "<group>";
+		};
+		8856C85A19EA1AF400CBE5A4 /* RFC1123 */ = {
+			isa = PBXGroup;
+			children = (
+				8856C85B19EA1AF400CBE5A4 /* NSDateRFC1123.h */,
+				8856C85C19EA1AF400CBE5A4 /* NSDateRFC1123.m */,
+			);
+			path = RFC1123;
+			sourceTree = "<group>";
+		};
+		8856C85D19EA1AF400CBE5A4 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8856C85E19EA1AF400CBE5A4 /* AMkColTest.h */,
+				8856C85F19EA1AF400CBE5A4 /* AMkColTest.m */,
+				8856C86019EA1AF400CBE5A4 /* BPutTest.h */,
+				8856C86119EA1AF400CBE5A4 /* BPutTest.m */,
+				8856C86219EA1AF400CBE5A4 /* CGetTest.h */,
+				8856C86319EA1AF400CBE5A4 /* CGetTest.m */,
+				8856C86419EA1AF400CBE5A4 /* DAVTest.h */,
+				8856C86519EA1AF400CBE5A4 /* DAVTest.m */,
+				8856C86619EA1AF400CBE5A4 /* DCopyTest.h */,
+				8856C86719EA1AF400CBE5A4 /* DCopyTest.m */,
+				8856C86819EA1AF400CBE5A4 /* EMoveTest.h */,
+				8856C86919EA1AF400CBE5A4 /* EMoveTest.m */,
+				8856C86A19EA1AF400CBE5A4 /* FListTest.h */,
+				8856C86B19EA1AF400CBE5A4 /* FListTest.m */,
+				8856C86C19EA1AF400CBE5A4 /* GDeleteTest.h */,
+				8856C86D19EA1AF400CBE5A4 /* GDeleteTest.m */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +401,7 @@
 				8856C82E19E9F75B00CBE5A4 /* TLV001_SCR_005b.png in Resources */,
 				8856C82B19E9F75B00CBE5A4 /* TLV001_SCR_002.png in Resources */,
 				8856C83619E9F75B00CBE5A4 /* TLV001_SCR_013.png in Resources */,
+				8856C87719EA1AF400CBE5A4 /* LICENSE.txt in Resources */,
 				88361FC719E48E440084093F /* Images.xcassets in Resources */,
 				8856C83519E9F75B00CBE5A4 /* TLV001_SCR_012.png in Resources */,
 				8856C82C19E9F75B00CBE5A4 /* TLV001_SCR_004.png in Resources */,
@@ -292,9 +430,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8856C87F19EA1AF400CBE5A4 /* FListTest.m in Sources */,
 				88361FC219E48E440084093F /* LogInViewController.m in Sources */,
+				8856C87819EA1AF400CBE5A4 /* NSDateRFC1123.m in Sources */,
+				8856C87619EA1AF400CBE5A4 /* ISO8601DateFormatter.m in Sources */,
+				8856C87E19EA1AF400CBE5A4 /* EMoveTest.m in Sources */,
+				8856C87419EA1AF400CBE5A4 /* DAVResponseItem.m in Sources */,
+				8856C87C19EA1AF400CBE5A4 /* DAVTest.m in Sources */,
+				8856C87919EA1AF400CBE5A4 /* AMkColTest.m in Sources */,
+				8856C87A19EA1AF400CBE5A4 /* BPutTest.m in Sources */,
+				8856C87D19EA1AF400CBE5A4 /* DCopyTest.m in Sources */,
 				88361FBF19E48E440084093F /* AppDelegate.m in Sources */,
+				8856C86E19EA1AF400CBE5A4 /* DAVBaseRequest.m in Sources */,
+				8856C87B19EA1AF400CBE5A4 /* CGetTest.m in Sources */,
+				8856C87319EA1AF400CBE5A4 /* DAVRequests.m in Sources */,
+				8856C87019EA1AF400CBE5A4 /* DAVListingParser.m in Sources */,
+				8856C88019EA1AF400CBE5A4 /* GDeleteTest.m in Sources */,
+				8856C86F19EA1AF400CBE5A4 /* DAVCredentials.m in Sources */,
+				8856C87219EA1AF400CBE5A4 /* DAVRequestGroup.m in Sources */,
+				8856C87119EA1AF400CBE5A4 /* DAVRequest.m in Sources */,
 				88361FBC19E48E440084093F /* main.m in Sources */,
+				8856C87519EA1AF400CBE5A4 /* DAVSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +574,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TheLearningVillage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -428,7 +589,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TheLearningVillage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
