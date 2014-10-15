@@ -8,14 +8,13 @@
 
 #import "LogInViewController.h"
 #import "AirStash/Airstash.h"
-#import "DAVSession.h"
-#import "DAVCredentials.h"
+
 
 @interface LogInViewController () {
     
 }
 
-//@property (strong,nonatomic) AirStash *airstash;
+@property (strong,nonatomic) AirStash *airstash;
 @property (strong,nonatomic) NSString *path;
 @property (strong,nonatomic) NSArray *files;
 
@@ -34,33 +33,97 @@
     [super didReceiveMemoryWarning];
 }
 
+#pragma mark - Log In Button
 //////////////////////////
 ///----Login Button----///
 //////////////////////////
 
 -(IBAction)login:(id)sender {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    //NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     spinner.hidden = NO;
     NSString *usernameString = username.text;
     NSString *truePassword = [self passwordForUsername:usernameString];
+    NSLog(@"%@", truePassword);
+    NSLog(@"%@", password.text);
     if (truePassword == password.text) {
         //success block
+        [self presentAlert:@"Yay!" :@"You did it Brandon!"];
+    }
+    else if (truePassword != password.text) {
+        //failure block
+        [self presentAlert:@"Incorrect" :@"You have entered an incorrect username or password. Please try again"];
     }
 }
 
 -(NSString *)passwordForUsername:(NSString *)username {
-    DAVCredentials *credentials = [DAVCredentials credentialsWithUsername:@""
-                                                                 password:@""];
     
-    NSString *root = @"http://airstash.net"; // don't include the trailing / (slash)
+    /*
+    NSLog(@"Get a file from AirStash");
+    // We allocate an AirStash object to handle the request.
+    _airstash = [[AirStash alloc] init];
+    // Figure out a temporary file to hold the downloaded file.
+    NSString *temporaryDirectory = NSTemporaryDirectory();
+    NSString *tempFile = [temporaryDirectory stringByAppendingPathComponent:@"AirStashTemp"];
+    [_airstash loadFileTo:tempFile
+              UsingFilter:nil
+           presentingFrom:self
+             successBlock:^(NSString *origname) {
+                 NSString *msg = [NSString stringWithFormat:@"Success loading file from AirStash: original filename: %@", origname];
+                 NSLog(@"%@", msg);
+                 [self presentAlertWithMessage:msg];
+                 // Now move the file from the temp location to the Documents directory, using the
+                 // original name the file had on the AirStash device.
+                 NSURL *docDir = [self getDocumentsDirectory];
+                 assert(docDir != nil);
+                 NSLog(@"%@", docDir);
+                 NSURL *newURL = [docDir URLByAppendingPathComponent:origname];
+                 [self moveFile:[NSURL fileURLWithPath:tempFile] to:newURL];
+                 // Release the AirStash object to free up any memory it holds.
+                 self.airstash = nil;
+             }
+               errorBlock:^(AirStashStatus errorCode, NSString *reason) {
+                   NSString *msg = [NSString stringWithFormat:@"Problem loading file from AirStash: (%d) %@", errorCode, reason];
+                   NSLog(@"%@", msg);
+                   [self presentAlertWithMessage:msg];
+                   // Release the AirStash object to free up any memory it holds.
+                   self.airstash = nil;
+               }];
+     */
     
-    DAVSession *session = [[DAVSession alloc] initWithRootURL:root
-                                                  credentials:credentials];
-    
-    
-    NSString *truePassword = @"password";
+    NSString *fullUsernameFile = [NSString stringWithFormat:@"%@.txt", username];
+    NSString *fullStringURL = [NSString stringWithFormat:@"http://airstash.local/files/%@", fullUsernameFile];
+    NSURL *fullURL = [NSURL URLWithString:fullStringURL];
+    NSError* error = nil;
+    NSStringEncoding enc;
+    NSString *userData = [NSString stringWithContentsOfURL:fullURL usedEncoding:&enc error:&error];
+    NSArray *separatedData = [userData componentsSeparatedByString: @"+"];
+    NSLog(@"%@", separatedData);
+    NSString *truePassword = [separatedData objectAtIndex:1];
+    NSLog(@"%@", truePassword);
     return truePassword;
 }
+
+- (NSURL*)getDocumentsDirectory
+{
+    NSFileManager *fm = [[NSFileManager alloc] init];
+    NSArray *paths = [fm URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
+    //NSLog(@"document directory: %@", paths);
+    return [paths objectAtIndex:0];
+}
+
+- (void)moveFile:(NSURL*)srcFile to:(NSURL*)destFile
+{
+    NSError *error = nil;
+    NSFileManager *fm = [[NSFileManager alloc] init];
+    [fm moveItemAtURL:srcFile toURL:destFile error:&error];
+    if (error) {
+        // A real application would detect the overwrite case and do something reasonable.
+        // This is a demo, so I'm being really lazy and just reporting the "error".
+        NSLog(@"Error detected during move from %@ to %@   error: %@", srcFile, destFile, [error localizedDescription]);
+        [fm removeItemAtURL:srcFile error:nil];
+    }
+}
+
 
 /*
 - (void)getFileAction
@@ -118,14 +181,15 @@
 }
  */
 
+#pragma mark - UIAlertView
 /////////////////////////
 ///----UIAlertView----///
 /////////////////////////
 
-- (void)presentAlertWithMessage:(NSString*)message
+- (void)presentAlert:(NSString*)title :(NSString*)message
 {
     UIAlertView *alert;
-    alert = [[UIAlertView alloc] initWithTitle:@"Error"
+    alert = [[UIAlertView alloc] initWithTitle:title
                                        message:message
                                       delegate:nil
                              cancelButtonTitle:@"OK"
@@ -133,7 +197,7 @@
     [alert show];
 }
 
-
+#pragma mark - Keyboard Offset
 /////////////////////////////
 ///----Keyboard Offset----///
 /////////////////////////////
@@ -208,6 +272,7 @@
                                                   object:nil];
 }
 
+#pragma mark - Manage Return Button
 ///////////////////////////
 ///----Return Button----///
 ///////////////////////////
@@ -215,6 +280,7 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
     if (theTextField == password) {
         [theTextField resignFirstResponder];
+        [self login:nil];
     }
     else if (theTextField == username) {
         [theTextField resignFirstResponder];

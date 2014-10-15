@@ -34,6 +34,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="dkx-z0-nzr" eventType="touchUpInside" id="haM-eh-bft"/>
+                                </connections>
                             </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="U2y-Hg-Nbh">
                                 <rect key="frame" x="566" y="578" width="20" height="20"/>
@@ -45,6 +48,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="password" destination="rdf-t6-uwi" id="oaU-k8-Jfg"/>
+                        <outlet property="spinner" destination="U2y-Hg-Nbh" id="RTF-Y5-laX"/>
                         <outlet property="username" destination="tkW-KM-8xq" id="LDV-cq-tfT"/>
                     </connections>
                 </viewController>
@@ -75,6 +79,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgw-xi-WNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1666" y="-57"/>
+        </scene>
+        <!--Student View Controller-->
+        <scene sceneID="c9Q-Up-D4L">
+            <objects>
+                <viewController id="YvE-n9-BEP" customClass="StudentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ixj-3x-EXY"/>
+                        <viewControllerLayoutGuide type="bottom" id="w0G-eI-yUm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I3x-MP-ki1">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uX1-B2-tFe">
+                                <rect key="frame" x="43" y="48" width="46" height="30"/>
+                                <state key="normal" title="Math">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="math:" destination="mi0-Re-nbU" eventType="touchUpInside" id="Mwf-SF-tfT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6IA-lp-GJP">
+                                <rect key="frame" x="27" y="149" width="79" height="30"/>
+                                <state key="normal" title="English">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="english:" destination="mi0-Re-nbU" eventType="touchUpInside" id="6DQ-aV-9GV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cad-ms-jaV">
+                                <rect key="frame" x="29" y="253" width="74" height="30"/>
+                                <state key="normal" title="Biology">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="biology:" destination="mi0-Re-nbU" eventType="touchUpInside" id="Glo-fy-njE"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" mediaPlaybackRequiresUserAction="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G4-33-kYG">
+                                <rect key="frame" x="147" y="0.0" width="877" height="630"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="webView" destination="9G4-33-kYG" id="dML-9L-M66"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mi0-Re-nbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="943"/>
         </scene>
     </scenes>
     <resources>
